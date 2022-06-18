@@ -8,6 +8,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barrio&family=Fascinate&family=Indie+Flower&family=VT323&family=Vidaloka&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+
     <link rel="stylesheet" href="style.css" />
     <title>Editor de memes</title>
 </head>
@@ -16,97 +35,215 @@
     <!--/*******************************************************************************
             HEADER
     *******************************************************************************/-->
-    <section class="container-father-section">
+    <section class="container-father-section" href="#text-icon"  href="#image-icon">
         <header class="container-header">
-            <nav class="container-nav">
-                <h1 class="main-title" data-text="generador">GENERADOR DE MEMES</h1>
-                <div class="nav-icon image-icon"><i class="fa-solid fa-object-group"></i>Imagen</div>
-                <div class="nav-icon text-icon"><i class="fa-solid fa-comments"></i>Texto</div>
-                <div class="nav-icon image-icon"><i class="fa-regular fa-lightbulb"></i>Modo oscuro</div>
-            </nav>
+            <h1 class="main-title">GENERADOR DE MEMES</h1>
+
+
+            <div class="btn-header">
+                <div> <a class="header-icon image-icon"  id="image-icon"><i class="fa-solid fa-object-group"></i>Imagen</a></div>
+                <div> <a class="header-icon text-icon" id="text-icon"><i
+                            class="fa-solid fa-comments"></i>Texto</a></div>
+                <div> <a class="header-icon toggel-icon">Modo oscuro </a></div>
+            </div>
+
+
         </header>
 
         <!--/*******************************************************************************
                 MAIN
         *******************************************************************************/-->
-        <main class="container-main">
-            <div class="black-box master-box"> NEGRO
-                <div class="white-box top-box">
 
-                    <h2 id="top-text">TEXTO CAJA BLANCA</h2>
-                    <div class="white-box bottom-box">
-                        <h2 id="bottom-text">TEXTO CAJA BLANCA</h2>
-                    </div>
+
+        <main class="container-main">
+            <div class="black-box master-box">
+                <div class="white-box top-box">
+                    <h2 id="top-text">TEXT BOX TOP</h2>
+                </div>
+                <div class="white-box bottom-box ">
+                    <h2 id="bottom-text">TEXT BOX BOTTOM</h2>
                 </div>
             </div>
         </main>
 
+
+        <!--/*******************************************************************************
+           DOWNLOAD BUTTON
+         *******************************************************************************/-->
+        <section class="container-dowload-button">
+            <a class="a-dowload-button" href="#">Descargar meme</a>
+        </section>
+
         <!--/*******************************************************************************
           ASIDE TEXT
          *******************************************************************************/-->
-        <aside class="container-right-sidebar">
-            <!-- <button>x</button> -->
+        <aside class="container-right-text oculto mostrar" id="aside-text">
             <section class="text-right-sidebar">
-
-                <!-- <div>
-                    <h3>SUPERIOR</h3> -->
-                <!-- <textarea id="input" type="'text">TOP TEXT</textarea>
-                    <label> Sin texto superior</label>
+                <div class="container-btn-x">
+                    <button id="btn-x-text" href="#" class="btn-x-text ocultar">x</button>
                 </div>
-                <div>
-                    <h3>INFERIOR</h3>
-                    <textarea id="input" type="'text">BOTTOM TEXT</textarea>
-                    <label>Sin texto inferior</label>
+                <div class="title-aside">
+                    <h2>TEXTO</h2>
                 </div>
 
-                <div>
-                    <h3>FUENTE</h3>
-                    <select>Impact</select>
-                    <input>45</input>
-                    <div class="container-alignment">
-                        <button></button>
-                        <button></button>
-                        <button></button>
+                <div class="container-text-top">
+                    <h3 class="text-top">SUPERIOR</h3>
+                    <textarea id="text-top-textarea" class="text-top">TOP TEXT</textarea>
+                    <div class="input-label">
+                        <input id="text-top-input" type="checkbox">
+                        <label for="text-top-input"> Sin texto superior</label>
                     </div>
-                </div> -->
-
-                <!-- <div>
-                    <h3> COLOR</h3>
-                    <li> #000000</li>
-                </div>
-                <div>
-                    <h3>FONDO</h3>
-                    <li>#FFFFFF</li>
-                    <li> Fondo transparente</li>
-                </div>
-                <div>
-                    <h3>CONTORNO</h3>
-                    <button>Ninguno</button>
-                    <button>Claro</button>
-                    <button> Oscuro</button>
                 </div>
 
-                <div>
-                    <h3>ESPACIADO</h3>
-                    <input> 7</input>
-                    <h3>INTERLINEADO</h3>
-                    <select>1.2</select>
-                </div> -->
-            </section>
 
-            <!--/*******************************************************************************
-            ASIDE IMAGE                       
-         *******************************************************************************/-->
-            <section class="image-right-sidebar">
 
+                <div class="container-text-bottom">
+                    <h3 class="text-bottom">INFERIOR</h3>
+                    <textarea id="text-bottom-textarea" class="text-bottom" id="input"
+                        type="text">BOTTOM TEXT</textarea>
+                    <div class="input-label">
+                        <input id="text-bottom" type="checkbox">
+                        <label for="text-bottom">Sin texto inferior</label>
+                    </div>
+                </div>
+
+
+                <div class="container-font">
+                    <h3 class="aligment-style">FUENTE</h3>
+                    <div><select class="selection-font aligment-stylet"></select></div>
+                </div>
+                <div class="container-alignment">
+                    <input class="font-alignment aligment-style"></input>
+                    <button class="font-alignment aligment-style"><i class="fa-solid fa-align-left"></i></button>
+                    <button class="font-alignment aligment-style"><i class="fa-solid fa-align-center"></i></button>
+                    <button class="font-alignment aligment-style"><i class="fa-solid fa-align-right"></i></button>
+                </div>
+                <div class="container-color">
+                    <div>
+                        <h3 class="font-color"> COLOR</h3>
+                        <input class="font-color"></input>
+                    </div>
+                    <div>
+                        <h3 class="font-color">FONDO</h3>
+                        <input class="font-color">
+
+
+                        <div class="input-label">
+                            <input id="transparent-background" type="checkbox">
+                            <label for="transparent-background">Fondo transparente</label>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="container-font-style">
+                        <h3 class="font-style">CONTORNO</h3>
+                        <button class="font-style">Ninguno</button>
+                        <button class="font-style">Claro</button>
+                        <button class="font-style"> Oscuro</button>
+                        <h3 class="font-style">ESPACIADO</h3>
+                        <input class="font-style"></input>
+                        <h3 class="font-style">INTERLINEADO</h3>
+                        <input class="font-style"></input>
+                    </div>
             </section>
         </aside>
         <!--/*******************************************************************************
-            FOOTER
+            ASIDE IMAGE                       
          *******************************************************************************/-->
-        <footer class="container-footer">
-            <a href="#">Descargar meme</a>
-        </footer>
+
+        <aside class="container-right-image oculto" id="aside-image">
+            <section class="image-right-sidebar">
+            </div>
+            <div class="container-btn-x">
+                <button id="btn-x-image" href="#" class="btn-x-image ocultar">x</button>
+            </div>
+
+
+            <div class="title-aside">
+                <h2>IMAGEN</h2>
+            </div>
+
+           <div class="container-image">
+            <h3>URL</h3>
+            <input>
+            <label> </label>
+           </div>
+
+           <div >
+            <h3>FONDO</h3>
+            <input>
+            <label> </label>
+            <input>
+            <label> </label>
+           </div>
+
+           <div class="container-image input-label">
+            <h4>BRILLO</h4>
+            <input>
+            <label> </label>
+           </div>
+
+
+           <div class="container-image input-label">
+            <h4>OPACIDAD</h4>
+            <input>
+            <label> </label>
+           </div>
+
+           <div class="container-image input-label">
+            <h4>CONTRASTE</h4>
+            <input>
+            <label> </label>
+           </div>
+
+           <div class="container-image input-label">
+            <h4>DESENFOQUE</h4>
+            <input>
+            <label> </label>
+           </div>
+
+           <div class="container-image input-label">
+            <h4>ESCALA DE DRISES</h4>
+            <input>
+            <label> </label>
+           </div>
+
+           <div class="container-image input-label">
+            <h4>SEPIA</h4>
+            <input>
+            <label> </label>
+           </div>
+           <div class="container-image input-label" >
+            <h4>HUE</h4>
+            <input>
+            <label> </label>
+           </div>
+
+           <div class="container-image input-label">
+            <h4>SATURADO</h4>
+            <input>
+            <label> </label>
+           </div>
+
+
+           <div class="container-image input-label">
+            <h4>NEGATIVO</h4>
+            <input>
+            <label> </label>
+           </div>
+           <div class="input-label" >
+            <a class="reset-button" href="#">Restablecer filtros</a>
+
+           </div>
+
+
+
+            </section>
+        </aside>
+
     </section>
 
 
