@@ -8,9 +8,9 @@
 /*? *******************************************************************************
     HEADER
 /*? ***************************************************************************** */
-.container-father-section{
-font-family: 'VT323', monospace;
-color: black;
+.container-father-section {
+    font-family: 'VT323', monospace;
+    color: black;
 
 
 }
@@ -28,12 +28,12 @@ color: black;
     padding: 0.5em;
     font-size: 2em;
     letter-spacing: 0.2em;
-    position: relative;    
+    position: relative;
 }
 
-.header-icon  {
+.header-icon {
     font-size: 1em;
-    margin: 1.5em; 
+    margin: 1.5em;
     padding: 1em 1em;
     top: 0;
     left: 0;
@@ -47,15 +47,13 @@ color: black;
     text-decoration: none;
     color: black;
 
-    
+
 }
 
-a:active.header-icon  {
+a:active.header-icon {
     top: 6px;
     left: -6px;
     box-shadow: none;
- 
-
 }
 
 
@@ -82,7 +80,10 @@ a:active.header-icon  {
     height: 35em;
     background-color: black;
 }
-
+.master-box-img{
+    width: 100%;
+    height: 35em;
+}
 .white-box {
     padding: 2em;
     position: absolute;
@@ -90,6 +91,7 @@ a:active.header-icon  {
     width: 100%;
     height: 7em;
 }
+
 .top-box {
     top: 0px;
     left: 0px;
@@ -99,7 +101,9 @@ a:active.header-icon  {
     left: 0px;
     bottom: 0px;
 }
-
+/* .master-box{
+    background-image: url();
+} */
 /*? ******************************************************************************
   DOWNLOAD BUTTON
 /*? *******************************************************************************/
@@ -126,12 +130,12 @@ a:active.header-icon  {
     position: relative;
     display: inline-block;
     padding: 15px 25px;
-    background-color:  rgb(218, 233, 240);
+    background-color: rgb(218, 233, 240);
     text-transform: uppercase;
     color: black;
     letter-spacing: 1px;
     border: solid black 0.2em;
-    box-shadow: -8px 8px 0  #0d87a0;
+    box-shadow: -8px 8px 0 #0d87a0;
     text-decoration: none;
 }
 
@@ -149,82 +153,133 @@ a:active.a-dowload-button {
 
 
 /*? *******************************************************************************
-    ASIDE TEXT
+    ASIDE TEXT 
 /*? *******************************************************************************/
-.container-right-text, .container-right-image{
+.container-right-text,
+.container-right-image {
     position: fixed;
     top: 0;
     right: 0;
-    background-color:  rgb(218, 233, 240);
-    border: solid 2px #0d87a0;;
+    background-color: rgb(218, 233, 240);
+    border: solid 2px #0d87a0;
     padding: 1em;
-    height: 100vh;
-    width: 35%;
-
+    width: 32%;
+    height: 100%;
 }
 
-.container-btn-x{
-display: flex;
+.container-btn-x {
+    display: flex;
 }
-.title-aside{
+
+.title-aside {
     text-align: center;
 }
-.container-btn-x, .btn-x-text{
-     justify-content: flex-end;
+
+.container-btn-x,
+.btn-x-text {
+    justify-content: flex-end;
 }
-.btn-x-text, .btn-x-image, .reset-button{
+
+.btn-x-text,
+.btn-x-image,
+.reset-button {
     padding: 0.4em;
     background-color: rgb(199, 199, 224);
-    border: solid black 0.2em;  
+    border: solid black 0.2em;
 }
-   
-.container-text-top{
+
+.container-text-top {
     display: flex;
     flex-direction: column;
 }
-.text-top{
+
+.text-top {
     padding: 0.5em;
 }
 
-.input-label{
-    margin-top: 1em;
-}
 
-.container-text-bottom, .container-image{
+.container-text-bottom,
+.container-image {
     display: flex;
     flex-direction: column;
 }
 
-.text-bottom{
+.text-bottom {
     padding: 0.5em;
-    margin-top: 0.5em;
 }
 
 
-.container-font{
+.container-font {
     display: flex;
     flex-direction: column;
 }
 
-.container-alignment{
-    display: block;  
+.container-alignment {
+    display: block;
 }
+
 .selection-font {
     margin-bottom: 0.5em;
 }
-.aligment-style, 
-.font-color, 
+
+.aligment-style,
+.font-color,
 .font-style {
     padding: 0.3em;
+}
 
+.font-color, .font-input {
+    width: 100%;
 }
-.oculto{
+.font-button{
+    background-color: rgb(199, 199, 224);
+    border: none;
+    border-radius: 0.3em;
+    padding: 0.5em;
+   
+}
+.oculto {
     display: none;
+ 
 }
+
 /*? *******************************************************************************
     ASIDE IMAGE
 /*? *******************************************************************************/
-.reset-button{
+.input-style {
+    background-color: rgb(199, 199, 224);
+    border: none;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    border-radius: 1em;
+    height: 2.5em;
+ 
+}
+
+.container-fondo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 1em;
+    margin: 0.2em;
+
+}
+
+input[type='range']{
+    width: 100%;
+    border-radius: 1em;
+    background-color: rgb(199, 199, 224);
+    appearance: none;
+    margin-top: 0.5em;
+    
+}
+
+.reset-button {
     color: black;
     text-decoration: none;
+}
+
+.btn-reset {
+    margin-top: 3em;
+
 }

@@ -57,10 +57,11 @@
 
         <main class="container-main">
             <div class="black-box master-box">
-                <div class="white-box top-box">
+              <div><img id="master-box" class="master-box-img" src="" ></div>
+                <div class="white-box top-box" id="top-box">
                     <h2 id="top-text">TEXT BOX TOP</h2>
                 </div>
-                <div class="white-box bottom-box ">
+                <div class="white-box bottom-box" id="bottom-box">
                     <h2 id="bottom-text">TEXT BOX BOTTOM</h2>
                 </div>
             </div>
@@ -88,7 +89,7 @@
 
                 <div class="container-text-top">
                     <h3 class="text-top">SUPERIOR</h3>
-                    <textarea id="text-top-textarea" class="text-top">TOP TEXT</textarea>
+                    <textarea id="text-top-textarea" class="text-top input-style">TOP TEXT</textarea>
                     <div class="input-label">
                         <input id="text-top-input" type="checkbox">
                         <label for="text-top-input"> Sin texto superior</label>
@@ -99,10 +100,10 @@
 
                 <div class="container-text-bottom">
                     <h3 class="text-bottom">INFERIOR</h3>
-                    <textarea id="text-bottom-textarea" class="text-bottom" id="input"
+                    <textarea id="text-bottom-textarea" class="text-bottom input-style" id="input"
                         type="text">BOTTOM TEXT</textarea>
                     <div class="input-label">
-                        <input id="text-bottom" type="checkbox">
+                        <input id="text-bottom-input" type="checkbox">
                         <label for="text-bottom">Sin texto inferior</label>
                     </div>
                 </div>
@@ -113,19 +114,19 @@
                     <div><select class="selection-font aligment-stylet"></select></div>
                 </div>
                 <div class="container-alignment">
-                    <input class="font-alignment aligment-style"></input>
-                    <button class="font-alignment aligment-style"><i class="fa-solid fa-align-left"></i></button>
-                    <button class="font-alignment aligment-style"><i class="fa-solid fa-align-center"></i></button>
-                    <button class="font-alignment aligment-style"><i class="fa-solid fa-align-right"></i></button>
+                    <input class="font-alignment aligment-style input-style"></input>
+                    <button class="font-alignment aligment-style font-button"><i class="fa-solid fa-align-left"></i></button>
+                    <button class="font-alignment aligment-style font-button"><i class="fa-solid fa-align-center"></i></button>
+                    <button class="font-alignment aligment-style font-button"><i class="fa-solid fa-align-right"></i></button>
                 </div>
                 <div class="container-color">
                     <div>
                         <h3 class="font-color"> COLOR</h3>
-                        <input class="font-color"></input>
+                        <input class="font-color input-style"></input>
                     </div>
                     <div>
                         <h3 class="font-color">FONDO</h3>
-                        <input class="font-color">
+                        <input class="font-color input-style">
 
 
                         <div class="input-label">
@@ -140,13 +141,13 @@
 
                     <div class="container-font-style">
                         <h3 class="font-style">CONTORNO</h3>
-                        <button class="font-style">Ninguno</button>
-                        <button class="font-style">Claro</button>
-                        <button class="font-style"> Oscuro</button>
-                        <h3 class="font-style">ESPACIADO</h3>
-                        <input class="font-style"></input>
+                        <button class="font-style font-button">Ninguno</button>
+                        <button class="font-style font-button">Claro</button>
+                        <button class="font-style font-button"> Oscuro</button>
+                        <h3 class="font-style ">ESPACIADO</h3>
+                        <input class="font-style input-style font-input"></input>
                         <h3 class="font-style">INTERLINEADO</h3>
-                        <input class="font-style"></input>
+                        <input class="font-style input-style font-input"></input>
                     </div>
             </section>
         </aside>
@@ -168,73 +169,77 @@
 
            <div class="container-image">
             <h3>URL</h3>
-            <input>
+            <input class="input-style" id="input-url" accept="image/*" type="url" >
             <label> </label>
            </div>
 
            <div >
             <h3>FONDO</h3>
-            <input>
+            <div class="container-fondo"> 
+            <input class="input-style">
             <label> </label>
-            <input>
+            <input class="input-style">
             <label> </label>
+        </div>
            </div>
 
-           <div class="container-image input-label">
+           <div class="container-image input-label" id="image-filter">
+            <h3>FILTROS</h3><br>
             <h4>BRILLO</h4>
-            <input>
+            <input type="range" id="brightness-range-input" min="0" max="1" value="1" step="0.1" class="input-image" >
             <label> </label>
            </div>
 
 
            <div class="container-image input-label">
             <h4>OPACIDAD</h4>
-            <input>
+            <input type="range" id="opacity-range-input" min="0" max="1" value="1" step="0.1" class="input-image">
             <label> </label>
            </div>
 
            <div class="container-image input-label">
             <h4>CONTRASTE</h4>
-            <input>
+            <input type="range" id="contrast-range-input" min="100" max="1000" value="1" step="100" class="input-image">
             <label> </label>
            </div>
 
            <div class="container-image input-label">
             <h4>DESENFOQUE</h4>
-            <input>
+            <input type="range" id="blur-range-input" min="0" max="10" value="0.1" step="0"  class="input-image">
             <label> </label>
            </div>
 
            <div class="container-image input-label">
-            <h4>ESCALA DE DRISES</h4>
-            <input>
+            <h4>ESCALA DE GRISES</h4>
+            <input type="range" id="grayscale-range-input" min="0" max="100" value="1" step="0" class="input-image">
             <label> </label>
            </div>
 
            <div class="container-image input-label">
             <h4>SEPIA</h4>
-            <input>
+            <input type="range" id="sepia-range-input" min="0" max="100" value="1" class="input-image">
             <label> </label>
            </div>
            <div class="container-image input-label" >
             <h4>HUE</h4>
-            <input>
+            <input type="range" id="hue-rotation-range-input" min="0" max="359" value="0" step="0"  class="input-image">
             <label> </label>
            </div>
 
            <div class="container-image input-label">
             <h4>SATURADO</h4>
-            <input>
+            <input type="range" id="sturarion-range-input" min="100" max="1000" value="10" step="100"  class="input-image">
             <label> </label>
            </div>
 
 
            <div class="container-image input-label">
             <h4>NEGATIVO</h4>
-            <input>
+            <input type="range" id="invert-range-input" min="0" max="1" value="0.1" step="1"  class="input-image">
             <label> </label>
            </div>
-           <div class="input-label" >
+           
+           <div class="input-label btn-reset" >
             <a class="reset-button" href="#">Restablecer filtros</a>
 
            </div>

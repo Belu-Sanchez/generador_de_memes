@@ -11,6 +11,26 @@ const imageIcon = document.getElementById('image-icon');
 const btnXimage = document.getElementById('btn-x-image');
 const asideImage = document.getElementById('aside-image');
 
+const textTopInput = document.getElementById('text-top-input');
+const topBox = document.getElementById('top-box');
+const textBottomInput = document.getElementById('text-bottom-input');
+const bottomBox = document.getElementById('bottom-box');
+
+const transparentBackground = document.getElementById('transparent-background');
+
+const masterBox = document.getElementById('master-box'); 
+const inputUrl = document.getElementById('input-url');
+
+const brightnessRange = document.getElementById('brightness-range-input');
+const opacityRangeInput = document.getElementById('opacity-range-input');
+const contrastRangeInput = document.getElementById('contrast-range-input');
+const blurRangeInput = document.getElementById('blur-range-input');
+const grayscaleRangeInput = document.getElementById('grayscale-range-input');
+const sepiaRangeInput = document.getElementById('sepia-range-input');
+const hueRotationRangeInput = document.getElementById('hue-rotation-range-input');
+const sturarionRangeInput = document.getElementById('sturarion-range-input');
+
+
 // *********************************************
 // modificar el texto top y bottom
 // *********************************************
@@ -49,4 +69,88 @@ imageIcon.addEventListener('click', ()=>{
 
 btnXimage.addEventListener('click', ()=>{
     asideImage.classList.add('oculto')
+})
+
+// **********************************************************
+// click boton sin texto y ocultar mostrar box-white && text
+// **********************************************************
+
+textTopInput.addEventListener('click', ()=>{
+    topBox.classList.toggle('oculto');
+    topText.classList.toggle('oculto');
+})
+
+textBottomInput.addEventListener('click', ()=>{
+    bottomBox.classList.toggle('oculto');
+    bottomText.classList.toggle('oculto');
+})
+
+// **********************************************************
+// click boton fondo transparente y ocultar mostrar box-black 
+// **********************************************************
+
+transparentBackground .addEventListener('click', ()=>{
+    topBox.classList.toggle('oculto');
+    bottomBox.classList.toggle('oculto');
+ })
+
+
+// **********************************************************
+// Mostrar imagen
+// **********************************************************
+
+inputUrl.addEventListener('input', (event) => {
+    const  mostrarImage = event.target.value;
+    masterBox.style.backgroundImage = `url(${mostrarImage})`
+})
+
+// **********************************************************
+// Filtros imagen -
+// **********************************************************
+
+brightnessRange.addEventListener('input', (event) => {
+    const brightnessImage = event.target.value;
+    masterBox.style.filter = `brightness(${brightnessImage})`
+})
+
+opacityRangeInput.addEventListener('input', (event) => {
+    const opacityRangeImage = event.target.value;
+    masterBox.style.filter = `opacity(${opacityRangeImage})`
+})
+
+contrastRangeInput.addEventListener('input', (event) => {
+    const contrastRangeImage = event.target.value;
+    masterBox.style.filter = `contrast(${contrastRangeImage}%)`
+})
+
+blurRangeInput.addEventListener('input', (event) => {
+    const blurRangeImage = event.target.value;
+    masterBox.style.filter = `blur(${blurRangeImage}px)`
+})
+
+grayscaleRangeInput.addEventListener('input', (event) => {
+    const grayscaleRangeImage = event.target.value;
+    masterBox.style.filter = `grayscale(${grayscaleRangeImage}%)`
+})
+
+sepiaRangeInput.addEventListener('input', (event) => {
+    const sepiaRangeImage = event.target.value;
+    masterBox.style.filter = `sepia(${sepiaRangeImage}%)`
+})
+
+hueRotationRangeInput.addEventListener('input', (event) => {
+    const  hueRotationRangeImage = event.target.value;
+    masterBox.style.filter = `hue-rotate(${hueRotationRangeImage}deg)`
+})
+
+sturarionRangeInput.addEventListener('input', (event) => {
+    const  sturarionRangeImage = event.target.value;
+    masterBox.style.filter = `saturate(${sturarionRangeImage}%)`
+})
+
+const invertRangeInput = document.getElementById('invert-range-input');
+
+invertRangeInput.addEventListener('input', (event) => {
+    const  invertRangeImage = event.target.value;
+    masterBox.style.filter = `invert(${invertRangeImage})`
 })
