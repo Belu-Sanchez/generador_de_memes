@@ -56,8 +56,8 @@
 
 
         <main class="container-main">
-            <div class="black-box master-box">
-              <div><img id="master-box" class="master-box-img" src="" ></div>
+            <div class="black-box master-box" id="black-box">
+              <div><img id="master-box" class="master-box-img" ></div>
                 <div class="white-box top-box" id="top-box">
                     <h2 id="top-text">TEXT BOX TOP</h2>
                 </div>
@@ -91,8 +91,8 @@
                     <h3 class="text-top">SUPERIOR</h3>
                     <textarea id="text-top-textarea" class="text-top input-style">TOP TEXT</textarea>
                     <div class="input-label">
-                        <input id="text-top-input" type="checkbox">
-                        <label for="text-top-input"> Sin texto superior</label>
+                        <input id="text-top-input" type="checkbox" class="text-input-chekbox">
+                        <label for="text-top-input" class="text-input-label"> Sin texto superior</label>
                     </div>
                 </div>
 
@@ -103,7 +103,7 @@
                     <textarea id="text-bottom-textarea" class="text-bottom input-style" id="input"
                         type="text">BOTTOM TEXT</textarea>
                     <div class="input-label">
-                        <input id="text-bottom-input" type="checkbox">
+                        <input id="text-bottom-input" type="checkbox" class="text-input-chekbox">
                         <label for="text-bottom">Sin texto inferior</label>
                     </div>
                 </div>
@@ -130,8 +130,8 @@
 
 
                         <div class="input-label">
-                            <input id="transparent-background" type="checkbox">
-                            <label for="transparent-background">Fondo transparente</label>
+                            <input id="transparent-background" type="checkbox" class="text-input-chekbox">
+                            <label for="transparent-background" >Fondo transparente</label>
                         </div>
                     </div>
 
@@ -176,8 +176,10 @@
            <div >
             <h3>FONDO</h3>
             <div class="container-fondo"> 
-            <input class="input-style">
-            <label> </label>
+                <div class="input-favcolor" >
+            <input class="favcolor" type="color" id="type-color" name="favcolor" value="#FFFFFF">
+            <label for="favcolor"></label><span class="span-fondo">#FFFFFF</span>
+         </div>
             <input class="input-style">
             <label> </label>
         </div>
@@ -240,7 +242,7 @@
            </div>
            
            <div class="input-label btn-reset" >
-            <a class="reset-button" href="#">Restablecer filtros</a>
+            <a class="reset-button" type="submit" id="reset-button" href="#">Restablecer filtros</a>
 
            </div>
 

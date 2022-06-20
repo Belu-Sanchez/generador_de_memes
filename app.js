@@ -29,6 +29,7 @@ const grayscaleRangeInput = document.getElementById('grayscale-range-input');
 const sepiaRangeInput = document.getElementById('sepia-range-input');
 const hueRotationRangeInput = document.getElementById('hue-rotation-range-input');
 const sturarionRangeInput = document.getElementById('sturarion-range-input');
+const invertRangeInput = document.getElementById('invert-range-input');
 
 
 // *********************************************
@@ -148,9 +149,36 @@ sturarionRangeInput.addEventListener('input', (event) => {
     masterBox.style.filter = `saturate(${sturarionRangeImage}%)`
 })
 
-const invertRangeInput = document.getElementById('invert-range-input');
 
 invertRangeInput.addEventListener('input', (event) => {
     const  invertRangeImage = event.target.value;
     masterBox.style.filter = `invert(${invertRangeImage})`
 })
+
+// **********************************************************
+// Filtro imagen - INPUT COLOR
+// **********************************************************
+
+const typeColor = document.getElementById('type-color');
+const blackBox = document.getElementById('black-box');
+
+typeColor.addEventListener('input', (event) =>{
+    const filterTypeColor = event.target.value;
+    blackBox.style.background = filterTypeColor
+})
+
+
+
+// **********************************************************
+// Reset Filtros imagen - INCOMPLETO
+// **********************************************************
+
+//const imageFilter = document.getElementById('image-filter');
+//const resetButton = document.getElementById('reset-button');
+
+// resetButton.addEventListener('click', ()=>{
+//     const resetFilter = event.target.value;
+//     imageFilter.reset(resetFilter)
+// })
+
+//document.getElementById('image-filter').reset()

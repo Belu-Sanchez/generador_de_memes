@@ -161,10 +161,11 @@ a:active.a-dowload-button {
     top: 0;
     right: 0;
     background-color: rgb(218, 233, 240);
-    border: solid 2px #0d87a0;
-    padding: 1em;
+    border: solid 3px #0d87a0;
+    padding: 0.5em 2em 0em 1em ;
     width: 32%;
     height: 100%;
+    font-size: 0.8em;
 }
 
 .container-btn-x {
@@ -183,7 +184,7 @@ a:active.a-dowload-button {
 .btn-x-text,
 .btn-x-image,
 .reset-button {
-    padding: 0.4em;
+    padding: 0.4em; 
     background-color: rgb(199, 199, 224);
     border: solid black 0.2em;
 }
@@ -195,6 +196,7 @@ a:active.a-dowload-button {
 
 .text-top {
     padding: 0.5em;
+
 }
 
 
@@ -218,14 +220,11 @@ a:active.a-dowload-button {
     display: block;
 }
 
-.selection-font {
-    margin-bottom: 0.5em;
-}
-
 .aligment-style,
 .font-color,
 .font-style {
-    padding: 0.3em;
+    padding: 0.1em;
+    margin-top: 0.5em;
 }
 
 .font-color, .font-input {
@@ -236,6 +235,7 @@ a:active.a-dowload-button {
     border: none;
     border-radius: 0.3em;
     padding: 0.5em;
+    font-size: 1em;
    
 }
 .oculto {
@@ -243,16 +243,18 @@ a:active.a-dowload-button {
  
 }
 
+
 /*? *******************************************************************************
     ASIDE IMAGE
 /*? *******************************************************************************/
 .input-style {
     background-color: rgb(199, 199, 224);
     border: none;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
+    margin: 0.5em 0 0.5em 0.5em;
     border-radius: 1em;
-    height: 2.5em;
+    height: 2.3em;
+    width: 100%;
+
  
 }
 
@@ -271,7 +273,8 @@ input[type='range']{
     background-color: rgb(199, 199, 224);
     appearance: none;
     margin-top: 0.5em;
-    
+    cursor: pointer;   
+
 }
 
 .reset-button {
@@ -282,4 +285,31 @@ input[type='range']{
 .btn-reset {
     margin-top: 3em;
 
+}
+.favcolor{
+    margin: 0.1em;
+    width: 1.7em;
+    appearance: none;
+    border-radius: 50%;
+    background-color: transparent;
+    border: none;
+    margin-left: 0.5em;
+}
+
+.favcolor::-webkit-color-swatch{
+    border: none;
+    border-radius: 50%;
+}
+.input-favcolor{
+    background-color: rgb(199, 199, 224);
+    border-radius: 1em;
+    height: 100%;
+    width: 100%;
+    position: relative;
+   
+}
+.span-fondo{
+    position: absolute;
+    bottom: 25%;
+    margin-left: 0.5em;
 }
