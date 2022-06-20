@@ -56,18 +56,16 @@ a:active.header-icon {
     box-shadow: none;
 }
 
-
-
-
 /*? *******************************************************************************
     MAIN
 /*? *******************************************************************************/
 .container-main {
-    background-color: rgb(241, 241, 208);
-    width: 100%;
+  height: 100vh;
+    background-color: hsl(60, 54%, 88%) ;
     display: flex;
     text-align: center;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 
@@ -80,10 +78,12 @@ a:active.header-icon {
     height: 35em;
     background-color: black;
 }
-.master-box-img{
+
+.master-box-img {
     width: 100%;
     height: 35em;
 }
+
 .white-box {
     padding: 2em;
     position: absolute;
@@ -101,9 +101,7 @@ a:active.header-icon {
     left: 0px;
     bottom: 0px;
 }
-/* .master-box{
-    background-image: url();
-} */
+
 /*? ******************************************************************************
   DOWNLOAD BUTTON
 /*? *******************************************************************************/
@@ -149,7 +147,9 @@ a:active.a-dowload-button {
     box-shadow: none;
 }
 
-
+.a-dowload-button:hover {
+    background-color: rgb(199, 199, 224);
+}
 
 
 /*? *******************************************************************************
@@ -162,7 +162,7 @@ a:active.a-dowload-button {
     right: 0;
     background-color: rgb(218, 233, 240);
     border: solid 3px #0d87a0;
-    padding: 0.5em 2em 0em 1em ;
+    padding: 0.5em 2em 0em 1em;
     width: 32%;
     height: 100%;
     font-size: 0.8em;
@@ -184,7 +184,7 @@ a:active.a-dowload-button {
 .btn-x-text,
 .btn-x-image,
 .reset-button {
-    padding: 0.4em; 
+    padding: 0.4em;
     background-color: rgb(199, 199, 224);
     border: solid black 0.2em;
 }
@@ -196,7 +196,6 @@ a:active.a-dowload-button {
 
 .text-top {
     padding: 0.5em;
-
 }
 
 
@@ -223,24 +222,39 @@ a:active.a-dowload-button {
 .aligment-style,
 .font-color,
 .font-style {
-    padding: 0.1em;
     margin-top: 0.5em;
 }
 
-.font-color, .font-input {
-    width: 100%;
+.input-edit-color{
+    margin-left: 0.5em;
 }
-.font-button{
+.font-button {
     background-color: rgb(199, 199, 224);
     border: none;
     border-radius: 0.3em;
     padding: 0.5em;
-    font-size: 1em;
-   
 }
+.input-espaciado{
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+
+.input-interlineado,
+.input-font{
+    margin-top: 0.5em;
+    padding-left: 1em;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%2212%22%20viewBox%3D%220%200%2012%2012%22%3E%3Ctitle%3Edown-arrow%3C%2Ftitle%3E%3Cg%20fill%3D%22%23000000%22%3E%3Cpath%20d%3D%22M10.293%2C3.293%2C6%2C7.586%2C1.707%2C3.293A1%2C1%2C0%2C0%2C0%2C.293%2C4.707l5%2C5a1%2C1%2C0%2C0%2C0%2C1.414%2C0l5-5a1%2C1%2C0%2C1%2C0-1.414-1.414Z%22%20fill%3D%22%23000000%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+    background-size: .6em;
+    background-position: calc(100% - 1.3em) center;
+    background-repeat: no-repeat;
+}
+
+
 .oculto {
     display: none;
- 
+
 }
 
 
@@ -250,12 +264,11 @@ a:active.a-dowload-button {
 .input-style {
     background-color: rgb(199, 199, 224);
     border: none;
-    margin: 0.5em 0 0.5em 0.5em;
     border-radius: 1em;
     height: 2.3em;
     width: 100%;
 
- 
+
 }
 
 .container-fondo {
@@ -267,13 +280,13 @@ a:active.a-dowload-button {
 
 }
 
-input[type='range']{
+input[type='range'] {
     width: 100%;
     border-radius: 1em;
     background-color: rgb(199, 199, 224);
     appearance: none;
     margin-top: 0.5em;
-    cursor: pointer;   
+    cursor: pointer;
 
 }
 
@@ -286,7 +299,8 @@ input[type='range']{
     margin-top: 3em;
 
 }
-.favcolor{
+
+.edit-color {
     margin: 0.1em;
     width: 1.7em;
     appearance: none;
@@ -296,20 +310,42 @@ input[type='range']{
     margin-left: 0.5em;
 }
 
-.favcolor::-webkit-color-swatch{
+.edit-color::-webkit-color-swatch {
     border: none;
     border-radius: 50%;
 }
-.input-favcolor{
+
+.input-edit-color {
     background-color: rgb(199, 199, 224);
     border-radius: 1em;
     height: 100%;
     width: 100%;
     position: relative;
-   
+
 }
-.span-fondo{
+
+.span-fondo {
     position: absolute;
     bottom: 25%;
     margin-left: 0.5em;
+}
+
+.blend-modes {
+    font-family: 'VT323', monospace;
+    padding-left: 1em;
+    margin-left: 0.5em;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%2212%22%20viewBox%3D%220%200%2012%2012%22%3E%3Ctitle%3Edown-arrow%3C%2Ftitle%3E%3Cg%20fill%3D%22%23000000%22%3E%3Cpath%20d%3D%22M10.293%2C3.293%2C6%2C7.586%2C1.707%2C3.293A1%2C1%2C0%2C0%2C0%2C.293%2C4.707l5%2C5a1%2C1%2C0%2C0%2C0%2C1.414%2C0l5-5a1%2C1%2C0%2C1%2C0-1.414-1.414Z%22%20fill%3D%22%23000000%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+    background-size: .6em;
+    background-position: calc(100% - 1.3em) center;
+    background-repeat: no-repeat;
+}
+
+.blend-modes::-ms-expand {
+    display: none;
+}
+.font-alignment{
+    width: 50%;
+    padding-right: 1em;
+    padding-left: 1em;
 }

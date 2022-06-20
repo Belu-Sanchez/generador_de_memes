@@ -78,12 +78,12 @@ btnXimage.addEventListener('click', ()=>{
 
 textTopInput.addEventListener('click', ()=>{
     topBox.classList.toggle('oculto');
-    topText.classList.toggle('oculto');
+    // topText.classList.toggle('oculto');
 })
 
 textBottomInput.addEventListener('click', ()=>{
     bottomBox.classList.toggle('oculto');
-    bottomText.classList.toggle('oculto');
+    // bottomText.classList.toggle('oculto');
 })
 
 // **********************************************************
@@ -92,7 +92,6 @@ textBottomInput.addEventListener('click', ()=>{
 
 transparentBackground .addEventListener('click', ()=>{
     topBox.classList.toggle('oculto');
-    bottomBox.classList.toggle('oculto');
  })
 
 
@@ -173,12 +172,16 @@ typeColor.addEventListener('input', (event) =>{
 // Reset Filtros imagen - INCOMPLETO
 // **********************************************************
 
-//const imageFilter = document.getElementById('image-filter');
-//const resetButton = document.getElementById('reset-button');
+const imageFilter = document.getElementById('image-filter');
+const resetButton = document.getElementById('reset-button');
+   console.log(document.getElementById('reset-button'))
 
-// resetButton.addEventListener('click', ()=>{
-//     const resetFilter = event.target.value;
-//     imageFilter.reset(resetFilter)
-// })
+
+
+ resetButton.addEventListener('click', (event)=>{  
+  const resetFilter = event.target.value;
+  alert('hola')
+  brightnessRange.reset(resetFilter)
+})
 
 //document.getElementById('image-filter').reset()
