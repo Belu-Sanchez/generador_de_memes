@@ -59,17 +59,15 @@
         <main class="container-main">
 
             <div class="black-box master-box" id="black-box">
-                <div><img id="master-box" class="master-box-img"></div>
 
-                <div class="white-box top-box" id="top-box">
-                    <h2 class="top-text" id="top-text">TEXT BOX TOP</h2>
-                </div>
-                <div class="white-box bottom-box" id="bottom-box">
-                    <h2 id="bottom-text">TEXT BOX BOTTOM</h2>
-                </div>
-        
+                <h2 class="top-text text-box-white" id="top-text">TEXT BOX TOP</h2>
+                <div id="master-box-img" class="master-box-img"></div>
+
+                <h2 id="bottom-text" class="text-box-white bottom-text">TEXT BOX BOTTOM</h2>
+
+
             </div>
-        <!--/*******************************************************************************
+            <!--/*******************************************************************************
            DOWNLOAD BUTTON
          *******************************************************************************/-->
 
@@ -79,149 +77,15 @@
         </main>
 
 
-
-
-        <!--/*******************************************************************************
-          ASIDE TEXT
-         *******************************************************************************/-->
-        <aside class="container-right-text oculto mostrar" id="aside-text">
-            <section class="text-right-sidebar">
-                <div class="container-btn-x">
-                    <button id="btn-x-text" href="#" class="btn-x-text ocultar">x</button>
-                </div>
-                <div class="title-aside">
-                    <h2>TEXTO</h2>
-                </div>
-
-                <div class="container-text-top">
-                    <h3 class="text-top">SUPERIOR</h3>
-                    <textarea id="text-top-textarea" class="text-top input-style">TOP TEXT</textarea>
-                    <br>
-                    <div class="input-label">
-                        <input id="text-top-input" type="checkbox" class="text-input-chekbox">
-                        <label for="text-top-input" class="text-input-label"> Sin texto superior</label>
-                    </div>
-                </div>
-
-                <br>
-
-                <div class="container-text-bottom">
-                    <h3 class="text-bottom">INFERIOR</h3>
-                    <textarea id="text-bottom-textarea" class="text-bottom input-style" id="input"
-                        type="text">BOTTOM TEXT</textarea>
-                    <br>
-                    <div class="input-label">
-                        <input id="text-bottom-input" type="checkbox" class="text-input-chekbox">
-                        <label for="text-bottom">Sin texto inferior</label>
-                    </div>
-                </div>
-
-                <br>
-                <div class="container-font">
-                    <h3 class="aligment-style">FUENTE</h3>
-                    <select class="input-style input-font">
-                        <option value="arial">Arial</option>
-                        <option value="arial black">Arial Black</option>
-                        <option value="american Typewriter">American Typewriter</option>
-                        <option value="andale mono">Andale Mono</option>
-                        <option value="comic sans ms">Comic Sans MS</option>
-                        <option value="helvetica">Helvetica</option>
-                        <option value="impact">Impact</option>
-                        <option value="verdana">Verdana</option>
-                        <option value="time new roman">Times New Roman</option>
-                    </select>
-
-                    <div class="container-alignment">
-                        <input class="font-alignment aligment-style input-style" type="number" value="40" max="40" min="12"></input>
-                        <button class="aligment-style font-button"><i class="fa-solid fa-align-left"></i></button>
-                        <button class="aligment-style font-button"><i class="fa-solid fa-align-center"></i></button>
-                        <button class="aligment-style font-button"><i class="fa-solid fa-align-right"></i></button>
-                    </div>
-                </div>
-
-                <br>
-
-
-
-
-
-
-                <div class="container-color">
-                    <h3 class="font-color"> COLOR</h3>
-
-
-                    <div class="container-color input-edit-color">
-
-                        <input class="edit-color" type="color" id="type-color" name="edit-color" value="#000000">
-                        <label for="edit-color"></label><span class="span-fondo">#000000</span>
-                    </div>
-
-                </div>
-                <div class="container-color">
-                    <h3 class="font-color">FONDO</h3>
-                    <div class="input-edit-color input-edit-color">
-                        <input class="edit-color" type="color" id="type-color" name="edit-color" value="#FFFFFF">
-                        <label for="edit-color"></label><span class="span-fondo">#FFFFFF</span>
-                    </div>
-
-                </div>
-
-
-
-
-
-
-
-
-
-                <div class="input-label"><br>
-                    <input id="transparent-background" type="checkbox" class="text-input-chekbox">
-
-                    <label for="transparent-background">Fondo transparente</label>
-                </div>
-
-
-
-                <br>
-
-                <div class="container-font-style">
-                    <h3 class="font-style">CONTORNO</h3>
-                    <button class="font-style font-button">Ninguno</button>
-                    <button class="font-style font-button">Claro</button>
-                    <button class="font-style font-button"> Oscuro</button>
-                    <br>
-                    <h3 class="font-style">ESPACIADO</h3>
-                    <input class="font-style input-style font-input input-espaciado" type="number" value="50" max="50" min="10"></input>
-                    <br>
-                    <h3 class="font-style">INTERLINEADO</h3>
-                    <select class="input-style input-interlineado">
-                        <option value="0.8">0.8</option>
-                        <option value="1">1</option>
-                        <option value="1.2" selected>1.2</option>
-                        <option value="1.5">1.5</option>
-                        <option value="2">2</option>
-                        <option value="2.5">2.5</option>
-
-                    </select>
-
-
-
-
-
-
-
-                </div>
-            </section>
-        </aside>
         <!--/*******************************************************************************
             ASIDE IMAGE                       
          *******************************************************************************/-->
 
-        <aside class="container-right-image oculto" id="aside-image">
+         <aside class="container-right-image oculto" id="aside-image">
             <section class="image-right-sidebar">
                 </div>
                 <div class="container-btn-x">
-                    <button id="btn-x-image" href="#" class="btn-x-image ocultar">x</button>
+                    <button id="btn-x-image" href="#" class="btn-x-image ocultar style-click">x</button>
                 </div>
 
 
@@ -230,31 +94,35 @@
                 </div>
 
                 <div class="container-image">
-                    <h3>URL</h3>
-                    <input class="input-style" id="input-url" accept="image/*" type="url">
+                    <h3 class="title-text-aside">URL</h3>
+                    <input class="input-style style-click" id="input-url" accept="image/*" type="url">
                     <label> </label>
                 </div>
 
                 <div>
-                    <h3>FONDO</h3>
+                    <h3 class="title-text-aside">FONDO</h3>
                     <div class="container-fondo">
-                        <div class="input-edit-color">
-                            <input class="edit-color" type="color" id="type-color" name="edit-color" value="#FFFFFF">
-                            <label for="edit-color"></label><span class="span-fondo">#FFFFFF</span>
+                        <div class="input-edit-color style-click">
+                            <input class="edit-color" type="color" id="color-fondo-input" name="edit-color"
+                                value="#FFFFFF">
+                            <label for="edit-color"></label><span class="span-fondo"
+                                id="color-fondo-label">#FFFFFF</span>
                         </div>
-                        <select class="input-style blend-modes" id="mySelection" name="blend-modes">
-                            <option value="unset">Ninguno</option>
+                        <select class="input-style blend-modes style-click" id="select-blend-modes">
+                            <option value="unset" selected>Ninguno</option>
                             <option value="lighten">Aclarar</option>
                             <option value="darken">Oscurecer</option>
                             <option value="difference">Diferencia</option>
                             <option value="luminosity">Luminosidad</option>
                             <option value="multiply">Multiplicar</option>
                         </select>
+
+
                     </div>
                 </div>
 
                 <div class="container-image input-label" id="image-filter">
-                    <h3>FILTROS</h3><br>
+                    <h3 class="title-text-aside">FILTROS</h3>
                     <h4>BRILLO</h4>
                     <input type="range" id="brightness-range-input" min="0" max="1" value="1" step="0.1"
                         class="input-image">
@@ -311,21 +179,137 @@
 
                 <div class="container-image input-label">
                     <h4>NEGATIVO</h4>
-                    <input type="range" id="invert-range-input" min="0" max="1" value="0.1" step="1"
+                    <input type="range" id="invert-range-input" min="0" max="1" value="0" step="0.1"
                         class="input-image">
                     <label> </label>
                 </div>
 
                 <div class="input-label btn-reset">
-                    <a class="reset-button" type="submit" id="reset-button" href="#">Restablecer filtros</a>
+                    <a class="reset-button style-click" type="submit" id="reset-button" value="Reset"
+                        href="#">Restablecer filtros</a>
+
+                </div>
+            </section>
+        </aside>
+
+        <!--/*******************************************************************************
+          ASIDE TEXT
+         *******************************************************************************/-->
+        <aside class="container-right-text oculto mostrar" id="aside-text">
+            <section class="text-right-sidebar">
+                <div class="container-btn-x">
+                    <button id="btn-x-text" href="#" class="btn-x-text ocultar style-click">x</button>
+                </div>
+                <div class="title-aside">
+                    <h2>TEXTO</h2>
+                </div>
+
+                <div class="container-text-top">
+                    <h3 class="title-text-aside">SUPERIOR</h3>
+                    <textarea id="text-top-textarea" class="text-top input-style style-click">TOP TEXT</textarea>
+                    <br>
+                    <div class="input-label">
+                        <input id="text-top-input" type="checkbox" class="text-input-chekbox style-click">
+                        <label for="text-top-input" class="text-input-label"> Sin texto superior</label>
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="container-text-bottom">
+                    <h3 class="title-text-aside">INFERIOR</h3>
+                    <textarea id="text-bottom-textarea" class="text-bottom input-style style-click" id="input"
+                        type="text">BOTTOM TEXT</textarea>
+                    <br>
+                    <div class="input-label">
+                        <input id="text-bottom-input" type="checkbox" class="text-input-chekbox">
+                        <label for="text-bottom">Sin texto inferior</label>
+                    </div>
+                </div>
+
+                <br>
+                <div class="container-font">
+                    <h3 class="title-text-aside">FUENTE</h3>
+                    <select class="input-style input-font style-click">
+                        <option value="arial">Arial</option>
+                        <option value="arial black">Arial Black</option>
+                        <option value="american Typewriter">American Typewriter</option>
+                        <option value="andale mono">Andale Mono</option>
+                        <option value="comic sans ms">Comic Sans MS</option>
+                        <option value="helvetica">Helvetica</option>
+                        <option value="impact">Impact</option>
+                        <option value="verdana">Verdana</option>
+                        <option value="time new roman">Times New Roman</option>
+                    </select>
+
+                    <div class="container-alignment">
+                        <input class="font-alignment aligment-style input-style style-click" id="text-size-input"
+                            name="text-size" type="number" value="40" max="40" min="12"></input>
+                        <button class="aligment-style style-click" id="button-align-left"><i
+                                class="fa-solid fa-align-left"></i></button>
+                        <button class="aligment-style style-click" id="button-align-center"><i
+                                class="fa-solid fa-align-center"></i></button>
+                        <button class="aligment-style style-click" id="button-align-right"><i
+                                class="fa-solid fa-align-right"></i></button>
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="container-color">
+                    <h3 class="title-text-aside"> COLOR</h3>
+
+
+                    <div class="container-color input-edit-color style-click">
+
+                        <input class="edit-color" type="color" id="type-color-text" name="type-color-text"
+                            value="#000000">
+                        <label for="type-color-text"></label><span class="span-fondo">#000000</span>
+                    </div>
+
+                </div>
+                <div class="container-color">
+                    <h3 class="title-text-aside">FONDO</h3>
+                    <div class="input-edit-color input-edit-color style-click">
+                        <input class="edit-color" type="color" id="type-color-box" name="type-color-box"
+                            value="#FFFFFF">
+                        <label for="type-color-box"></label><span class="span-fondo">#FFFFFF</span>
+                    </div>
 
                 </div>
 
 
+                <div class="input-label"><br>
+                    <input id="transparent-background" type="checkbox" class="text-input-chekbox">
 
+                    <label for="transparent-background">Fondo transparente</label>
+                </div>
+
+                <br>
+
+                <div class="container-font-style">
+                    <h3 class="title-text-aside">CONTORNO</h3>
+                    <button class="font-style style-click">Ninguno</button>
+                    <button class="font-style style-click">Claro</button>
+                    <button class="font-style style-click"> Oscuro</button>
+                    <br>
+                    <h3 class="title-text-aside">ESPACIADO</h3>
+                    <input class="font-style input-style font-input input-espaciado style-click" type="number"
+                        value="50" max="50" min="10"></input>
+                    <br>
+                    <h3 class="title-text-aside">INTERLINEADO</h3>
+                    <select class="input-style input-interlineado style-click">
+                        <option value="0.8">0.8</option>
+                        <option value="1">1</option>
+                        <option value="1.2" selected>1.2</option>
+                        <option value="1.5">1.5</option>
+                        <option value="2">2</option>
+                        <option value="2.5">2.5</option>
+
+                    </select>
+                </div>
             </section>
-        </aside>
-
+        </aside>      
     </section>
 
 

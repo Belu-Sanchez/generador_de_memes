@@ -6,7 +6,7 @@
 }
 
 /*? *******************************************************************************
-    HEADER
+ //   HEADER
 /*? ***************************************************************************** */
 .container-father-section {
     font-family: 'VT323', monospace;
@@ -47,7 +47,6 @@
     text-decoration: none;
     color: black;
 
-
 }
 
 a:active.header-icon {
@@ -57,53 +56,59 @@ a:active.header-icon {
 }
 
 /*? *******************************************************************************
-    MAIN
+ //   MAIN
 /*? *******************************************************************************/
 .container-main {
-  height: 100vh;
-    background-color: hsl(60, 54%, 88%) ;
+    height: 100vh;
+    background-color: hsl(60, 54%, 88%);
     display: flex;
     text-align: center;
     flex-direction: column;
     align-items: center;
+
 }
 
 
-
-.black-box {
-    position: relative;
+.master-box {
     margin: 1.5em;
-    margin-bottom: 3em;
-    width: 40em;
-    height: 35em;
+    width: 100%;
+    max-width: 610px;
+    height: 610px;
     background-color: black;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
 }
 
-.master-box-img {
+.text-box-white {
+    padding: 1em 4em;
     width: 100%;
-    height: 35em;
+    background: white;
+    color: black;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+
 }
 
-.white-box {
-    padding: 2em;
-    position: absolute;
-    background-color: white;
-    width: 100%;
-    height: 7em;
+#master-box-img {
+    flex-grow: 1;
+    background-size: cover;
+
+    
 }
 
-.top-box {
+.top-text {
     top: 0px;
-    left: 0px;
 }
 
-.bottom-box {
-    left: 0px;
+.bottom-text {
     bottom: 0px;
 }
 
 /*? ******************************************************************************
-  DOWNLOAD BUTTON
+  // DOWNLOAD BUTTON
 /*? *******************************************************************************/
 .container-dowload-button {
     text-align: center;
@@ -147,14 +152,11 @@ a:active.a-dowload-button {
     box-shadow: none;
 }
 
-.a-dowload-button:hover {
-    background-color: rgb(199, 199, 224);
-}
-
 
 /*? *******************************************************************************
-    ASIDE TEXT 
+  //  ASIDE
 /*? *******************************************************************************/
+
 .container-right-text,
 .container-right-image {
     position: fixed;
@@ -163,13 +165,14 @@ a:active.a-dowload-button {
     background-color: rgb(218, 233, 240);
     border: solid 3px #0d87a0;
     padding: 0.5em 2em 0em 1em;
-    width: 32%;
+    width: 25%;
     height: 100%;
-    font-size: 0.8em;
+    font-size: 0.9em;
 }
 
 .container-btn-x {
     display: flex;
+
 }
 
 .title-aside {
@@ -187,107 +190,59 @@ a:active.a-dowload-button {
     padding: 0.4em;
     background-color: rgb(199, 199, 224);
     border: solid black 0.2em;
+    cursor: pointer;
+
 }
 
-.container-text-top {
-    display: flex;
-    flex-direction: column;
-}
-
-.text-top {
-    padding: 0.5em;
-}
-
-
-.container-text-bottom,
-.container-image {
-    display: flex;
-    flex-direction: column;
-}
-
-.text-bottom {
-    padding: 0.5em;
-}
-
-
-.container-font {
-    display: flex;
-    flex-direction: column;
-}
-
-.container-alignment {
-    display: block;
-}
-
-.aligment-style,
-.font-color,
-.font-style {
+.title-text-aside {
     margin-top: 0.5em;
+    margin-bottom: 0.5em;
 }
 
-.input-edit-color{
-    margin-left: 0.5em;
-}
-.font-button {
-    background-color: rgb(199, 199, 224);
-    border: none;
-    border-radius: 0.3em;
-    padding: 0.5em;
-}
-.input-espaciado{
-    padding-left: 1em;
-    padding-right: 1em;
-}
-
-
-.input-interlineado,
-.input-font{
-    margin-top: 0.5em;
-    padding-left: 1em;
-    appearance: none;
-    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%2212%22%20viewBox%3D%220%200%2012%2012%22%3E%3Ctitle%3Edown-arrow%3C%2Ftitle%3E%3Cg%20fill%3D%22%23000000%22%3E%3Cpath%20d%3D%22M10.293%2C3.293%2C6%2C7.586%2C1.707%2C3.293A1%2C1%2C0%2C0%2C0%2C.293%2C4.707l5%2C5a1%2C1%2C0%2C0%2C0%2C1.414%2C0l5-5a1%2C1%2C0%2C1%2C0-1.414-1.414Z%22%20fill%3D%22%23000000%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3C%2Fsvg%3E");
-    background-size: .6em;
-    background-position: calc(100% - 1.3em) center;
-    background-repeat: no-repeat;
-}
-
-
-.oculto {
-    display: none;
-
+.style-click:hover,
+.style-click:focus {
+    background-color: #458491;
+    filter: brightness(130%);
 }
 
 
 /*? *******************************************************************************
-    ASIDE IMAGE
+  //  ASIDE IMAGE
 /*? *******************************************************************************/
+
 .input-style {
     background-color: rgb(199, 199, 224);
     border: none;
-    border-radius: 1em;
     height: 2.3em;
     width: 100%;
-
-
+    margin-bottom: 0.5em;
+    padding: 0.5em 1em;
+    cursor: pointer;
 }
 
 .container-fondo {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    border-radius: 1em;
-    margin: 0.2em;
-
+    cursor: pointer;
 }
 
 input[type='range'] {
     width: 100%;
+    height: 0.7em;
     border-radius: 1em;
     background-color: rgb(199, 199, 224);
     appearance: none;
     margin-top: 0.5em;
     cursor: pointer;
+    accent-color: #0d87a0;
+    margin-bottom: 0.5em;
 
+}
+
+input[type='range']:hover {
+    background-color: #458491;
+    filter: brightness(130%);
 }
 
 .reset-button {
@@ -317,7 +272,6 @@ input[type='range'] {
 
 .input-edit-color {
     background-color: rgb(199, 199, 224);
-    border-radius: 1em;
     height: 100%;
     width: 100%;
     position: relative;
@@ -344,8 +298,74 @@ input[type='range'] {
 .blend-modes::-ms-expand {
     display: none;
 }
-.font-alignment{
-    width: 50%;
+
+
+/*? *******************************************************************************
+  //  ASIDE TEXT 
+/*? *******************************************************************************/
+
+.aligment-style,
+.font-color,
+.font-style {
+    margin-top: 0.5em;
+}
+
+.aligment-style,
+.font-style {
+    background-color: rgb(199, 199, 224);
+    border: none;
+    padding: 0.5em;
+  
+
+}
+
+.fa-align-left:before {
+    content: '\f036';
+}
+
+.fa-align-center:before {
+    content: '\f037';
+}
+
+.fa-align-right:before {
+    content: '\f038';
+}
+
+.font-alignment {
+    width: 70%;
     padding-right: 1em;
     padding-left: 1em;
 }
+
+
+.container-color {
+    width: 9em;
+    display: flex;
+    display: inline-block;
+}
+
+
+.input-interlineado,
+.input-font {
+    margin-top: 0.5em;
+    padding-left: 1em;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%2212%22%20viewBox%3D%220%200%2012%2012%22%3E%3Ctitle%3Edown-arrow%3C%2Ftitle%3E%3Cg%20fill%3D%22%23000000%22%3E%3Cpath%20d%3D%22M10.293%2C3.293%2C6%2C7.586%2C1.707%2C3.293A1%2C1%2C0%2C0%2C0%2C.293%2C4.707l5%2C5a1%2C1%2C0%2C0%2C0%2C1.414%2C0l5-5a1%2C1%2C0%2C1%2C0-1.414-1.414Z%22%20fill%3D%22%23000000%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+    background-size: .6em;
+    background-position: calc(100% - 1.3em) center;
+    background-repeat: no-repeat;
+}
+
+/*? *******************************************************************************
+  // NECESSARY CODE JS
+/*? *******************************************************************************/
+
+
+.oculto {
+    display: none;
+  
+}
+
+/*? *******************************************************************************
+ //  MEDIA QUERYS
+/*? *******************************************************************************/
