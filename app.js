@@ -116,50 +116,21 @@ selectBlendModes.addEventListener('change', (event) =>{
 // FILTROS IMAGEN
 // **********************************************************
 
-brightnessRange.addEventListener('input', (event) => {
-    const brightnessImage = event.target.value;
-    masterBox.style.filter = `brightness(${brightnessImage})`;
-})
+const filter = ()=>{
+    masterBox.style.filter = `brightness(${brightnessRange.value}) opacity(${opacityRangeInput.value}) contrast(${contrastRangeInput.value}%) blur(${ blurRangeInput.value}px) grayscale(${grayscaleRangeInput.value}%) sepia(${sepiaRangeInput.value}%) hue-rotate(${hueRotationRangeInput.value}deg) saturate(${saturationRangeInput.value}%) invert(${invertRangeInput.value})`;
+};
 
-opacityRangeInput.addEventListener('input', (event) => {
-    const opacityRangeImage = event.target.value;
-    masterBox.style.filter = `opacity(${opacityRangeImage})`;
-})
 
-contrastRangeInput.addEventListener('input', (event) => {
-    const contrastRangeImage = event.target.value;
-    masterBox.style.filter = `contrast(${contrastRangeImage}%)`;
-})
+brightnessRange.addEventListener('input', (filter));
+opacityRangeInput.addEventListener('input', (filter));
+contrastRangeInput.addEventListener('input', (filter));
+blurRangeInput.addEventListener('input', (filter));
+grayscaleRangeInput.addEventListener('input', (filter));
+sepiaRangeInput.addEventListener('input', (filter));
+hueRotationRangeInput.addEventListener('input', (filter));
+saturationRangeInput.addEventListener('input', (filter));
+invertRangeInput.addEventListener('input', (filter));
 
-blurRangeInput.addEventListener('input', (event) => {
-    const blurRangeImage = event.target.value;
-    masterBox.style.filter = `blur(${blurRangeImage}px)`;
-})
-
-grayscaleRangeInput.addEventListener('input', (event) => {
-    const grayscaleRangeImage = event.target.value;
-    masterBox.style.filter = `grayscale(${grayscaleRangeImage}%)`;
-})
-
-sepiaRangeInput.addEventListener('input', (event) => {
-    const sepiaRangeImage = event.target.value;
-    masterBox.style.filter = `sepia(${sepiaRangeImage}%)`;
-})
-
-hueRotationRangeInput.addEventListener('input', (event) => {
-    const  hueRotationRangeImage = event.target.value;
-    masterBox.style.filter = `hue-rotate(${hueRotationRangeImage}deg)`;
-})
-
-saturationRangeInput.addEventListener('input', (event) => {
-    const  saturationRangeImage = event.target.value;
-    masterBox.style.filter = `saturate(${saturationRangeImage}%)`;
-})
-
-invertRangeInput.addEventListener('input', (event) => {
-    const  invertRangeImage = event.target.value;
-    masterBox.style.filter = `invert(${invertRangeImage})`;
-})
 
 // **********************************************************
 // FILTROS IMAGEN - RESET
@@ -271,19 +242,28 @@ colorBoxInput.addEventListener('input', (event) =>{
     topText.style.background = editColorBox 
     bottomText.style.background = editColorBox 
     colorBoxLabel.innerHTML = `${editColorBox}`
+   
 })
 
 // **********************************************************
 // FONDO TRANSPARENTE
 // **********************************************************
+const actualizarFondo = ()=>{
+    if (transparentBackground.checked){
+        topText.style.background = 'none';
+        topText.style.position= 'absolute'
+        bottomText.style.background = 'none';
+        bottomText.style.position = 'absolute';    
+    }else{
+        topText.style.background = `${colorBoxInput.value}`;
+        bottomText.style.background = `${colorBoxInput.value}`;
+        bottomText.style.position = 'relative'
+        topText.style.position = 'relative'
+    }
+  
+}
+transparentBackground.addEventListener('input', (actualizarFondo));
 
-transparentBackground.addEventListener('input', ()=>{
-    topText.classList.toggle('oculto-text-box');
-    bottomText.classList.toggle('oculto-text-box');
-    topText.style.background = 'none';
-    bottomText.style.background = 'none';
-
-})
 
 
 // **********************************************************
@@ -431,14 +411,51 @@ modoOscuroButton.addEventListener('click', ()=>{
 // DOWLOAD MEME
 // **********************************************************
 
-//     domtoimage.toPng(document.getElementById('black-box'))
-//    .then((dataUrl) => {
+    domtoimage.toPng(document.getElementById('black-box'))
+   .then((dataUrl) => {
  
-//     aDowloadButton.download = 'my-meme.png'
-//     aDowloadButton.href = dataUrl
-//      aDowloadButton.addEventListener('click')
-//     aDowloadButton.clearBasket()
-//    })
+    aDowloadButton.download = 'my-meme.png'
+    aDowloadButton.href = dataUrl
+     
+    
+   })
 
 
 
+// **********************************************************
+// CONTORNO
+// **********************************************************
+
+// const contornoTexto = document.getElementById('contorno');
+
+
+// noOutlineButton.addEventListener('click', (contorno) =>{
+
+// })
+
+
+    
+// function contorno(e){
+//   e.preventDefault();
+//   console.log('diste click')
+// }
+
+// // noOutlineButton.addEventListener('click', (event) => {
+// //     const sombra = event.target.value
+// //     topText.style.textShadow = `${sombra}none`;
+// //     bottomText.style.textShadow = `${sombra}none`;
+// // })
+
+
+// // lightOutlineButton.addEventListener('click', (event) => {
+// //     const sombra = event.target.value
+// //     topText.style.textShadow = `${sombra}3px 3px #FFFFFF`;
+// //     bottomText.style.textShadow = `${sombra}3px 3px #FFFFFF`;
+// // })
+
+
+// // darkOutlineButton.addEventListener('click', (event) => {
+// //     const sombra = event.target.value
+// //     topText.style.textShadow = `${sombra}3px 3px #000000`;
+// //     bottomText.style.textShadow = `${sombra}3px 3px #000000`;
+// // })

@@ -54,9 +54,9 @@
            //  MAIN
         *******************************************************************************/-->
         <main class="container-main" id="container-main">
-            <div class="black-box master-box" id="black-box" src="dataUrl">
+            <div class="black-box master-box" id="black-box">
                 <h2 class="top-text text-box-white" id="top-text">TEXT BOX TOP</h2>
-                <div src="#" alt="#" aria-label="imagen del meme" id="master-box-img" class="master-box-img"></div>
+                <div style="dataUrl" alt="#" aria-label="imagen del meme" id="master-box-img" class="master-box-img"></div>
                 <h2 id="bottom-text" class="text-box-white bottom-text">TEXT BOX BOTTOM</h2>
             </div>
             <!--/*******************************************************************************
@@ -264,9 +264,11 @@
                 <br>
                 <div class="container-font-style">
                     <h3 class="title-text-aside">CONTORNO</h3>
-                    <button class="font-style style-click" id="no-outline-button">Ninguno</button>
-                    <button class="font-style style-click" id="light-outline-button">Claro</button>
-                    <button class="font-style style-click" id="dark-outline-button"> Oscuro</button>
+                    <div id="contorno">
+                    <button class="font-style style-click contorno-ninguno" id="no-outline-button">Ninguno</button>
+                    <button class="font-style style-click contorno-claro" id="light-outline-button">Claro</button>
+                    <button class="font-style style-click contorno-oscuro" id="dark-outline-button"> Oscuro</button>
+                </div>
                     <!-- ************ PADDING ************ -->
                     <br>
                     <h3 class="title-text-aside">ESPACIADO</h3>

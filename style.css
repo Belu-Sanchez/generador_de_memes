@@ -94,7 +94,7 @@ a:active.header-icon {
 
 }
 
-#master-box-img {
+.master-box-img {
     flex-grow: 1;
     background-size: cover;
 }
@@ -168,7 +168,20 @@ a:active.a-dowload-button {
     width: 25%;
     height: 100%;
     font-size: 0.9em;
+ 
 }
+
+
+/* .container-right-image{
+    background-color: red;
+    display: block;
+}
+
+
+.btn-x-text,
+.btn-x-image {
+    display: none;
+} */
 
 .container-btn-x {
     display: flex;
@@ -181,7 +194,8 @@ a:active.a-dowload-button {
 
 .container-btn-x,
 .btn-x-text {
-    justify-content: flex-end;
+    position: fixed;
+    right: 5px;
 }
 
 .btn-x-text,
@@ -412,15 +426,26 @@ a:active.a-dowload-button {
     position: absolute;
 }
 
+
 /*? *******************************************************************************
  //  MEDIA QUERYS
 /*? *******************************************************************************/
-@media screen and (min-width:820px) and (max-width:1024px) {
+@media screen and (min-width:820px) and (max-width:1500px) {
 
     .container-right-text,
     .container-right-image {
         width: 30%;
+        overflow: auto;
+      
+    }
+    .container-right-image{
+        display: block;
+    }
 
+    
+    .btn-x-text,
+    .btn-x-image {
+        display: none;
     }
 
     .font-alignment {
@@ -458,9 +483,9 @@ a:active.a-dowload-button {
     .container-right-image {
         width: 45%;
         font-size: 0.7em;
-      
+        overflow: auto;
     }
-
+  
     .font-alignment {
         width: 100%;
 
