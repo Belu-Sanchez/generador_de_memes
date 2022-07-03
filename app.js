@@ -233,37 +233,35 @@ colorTextInput.addEventListener('input', (event) =>{
     colorTextLabel.innerHTML =`${editColorText}`
 })
 
-// **********************************************************
-// COLOR FONTO TEXTO
-// **********************************************************
-
-colorBoxInput.addEventListener('input', (event) =>{
-    const editColorBox = event.target.value;
-    topText.style.background = editColorBox 
-    bottomText.style.background = editColorBox 
-    colorBoxLabel.innerHTML = `${editColorBox}`
-   
-})
 
 // **********************************************************
-// FONDO TRANSPARENTE
+// FONDO TRANSPARENTE &&  COLOR FONTO TEXTO
 // **********************************************************
 const actualizarFondo = ()=>{
     if (transparentBackground.checked){
         topText.style.background = 'none';
         topText.style.position= 'absolute'
         bottomText.style.background = 'none';
-        bottomText.style.position = 'absolute';    
+        bottomText.style.position = 'absolute';  
+    
     }else{
         topText.style.background = `${colorBoxInput.value}`;
         bottomText.style.background = `${colorBoxInput.value}`;
-        bottomText.style.position = 'relative'
-        topText.style.position = 'relative'
+        bottomText.style.position = 'relative';
+        topText.style.position = 'relative';
+        topText.style.background = colorBoxInput ;
+        bottomText.style.background = colorBoxInput;
     }
   
 }
 transparentBackground.addEventListener('input', (actualizarFondo));
-
+colorBoxInput.addEventListener('input', (actualizarFondo));
+    
+   
+colorBoxInput.addEventListener('input', (event) =>{
+    const editColorBox = event.target.value;
+    colorBoxLabel.innerHTML = `${editColorBox}`;  
+})
 
 
 // **********************************************************
@@ -272,23 +270,28 @@ transparentBackground.addEventListener('input', (actualizarFondo));
 
 noOutlineButton.addEventListener('click', (event) => {
     const sombra = event.target.value
-    topText.style.textShadow = `${sombra}none`;
-    bottomText.style.textShadow = `${sombra}none`;
+    topText.style.webkitTextStroke = `${sombra} 0px`;
+    bottomText.style.webkitTextStroke = `${sombra} 0px`;
 })
 
 
 lightOutlineButton.addEventListener('click', (event) => {
     const sombra = event.target.value
-    topText.style.textShadow = `${sombra}3px 3px #FFFFFF`;
-    bottomText.style.textShadow = `${sombra}3px 3px #FFFFFF`;
+    topText.style.webkitTextStroke= `${sombra}2px #FFFFFF`;
+    topText.style.fontWeight =  '800'
+    bottomText.style.webkitTextStroke = `${sombra}2px #FFFFFF`;
+    bottomText.style.fontWeight =  '800'
 })
 
 
 darkOutlineButton.addEventListener('click', (event) => {
     const sombra = event.target.value
-    topText.style.textShadow = `${sombra}3px 3px #000000`;
-    bottomText.style.textShadow = `${sombra}3px 3px #000000`;
+    topText.style.webkitTextStroke = `${sombra}2px #000000`;
+    topText.style.fontWeight =  '800'
+    bottomText.style.webkitTextStroke = `${sombra}2px #000000`;
+    bottomText.style.fontWeight =  '800'
 })
+
 
 
 // **********************************************************
