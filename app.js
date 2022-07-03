@@ -246,11 +246,9 @@ const actualizarFondo = ()=>{
     
     }else{
         topText.style.background = `${colorBoxInput.value}`;
-        bottomText.style.background = `${colorBoxInput.value}`;
-        bottomText.style.position = 'relative';
         topText.style.position = 'relative';
-        topText.style.background = colorBoxInput ;
-        bottomText.style.background = colorBoxInput;
+        bottomText.style.background = `${colorBoxInput.value}`;
+        bottomText.style.position = 'relative'; 
     }
   
 }
