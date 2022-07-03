@@ -25,7 +25,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"
         integrity="sha512-01CJ9/g7e8cUmY0DFTMcUw/ikS799FHiOA0eyHsUWfOetgbx/t6oV4otQ5zXKQyIrQGTHSmRVPIgrgLcZi/WMA=="
         crossorigin="anonymous"></script>
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="stylesheet" href="style.css" />
     <title>Editor de memes</title>
 </head>
@@ -56,7 +56,8 @@
         <main class="container-main" id="container-main">
             <div class="black-box master-box" id="black-box">
                 <h2 class="top-text text-box-white" id="top-text">TEXT BOX TOP</h2>
-                <div style="dataUrl" alt="#" aria-label="imagen del meme" id="master-box-img" class="master-box-img"></div>
+                <div style="dataUrl" alt="#" aria-label="imagen del meme" id="master-box-img" class="master-box-img">
+                </div>
                 <h2 id="bottom-text" class="text-box-white bottom-text">TEXT BOX BOTTOM</h2>
             </div>
             <!--/*******************************************************************************
@@ -86,7 +87,7 @@
                     <h3 class="title-text-aside">URL</h3>
                     <input class="input-style style-click" id="input-url" accept="image/*" type="url"
                         aria-label="URL de imagen">
-                        <label for="input-url"></label>
+                    <label for="input-url"></label>
                 </div>
                 <!-- ************ FONDO ************ -->
                 <div>
@@ -99,7 +100,8 @@
                                 id="color-fondo-label"> #FFFFFF </span>
                         </div>
                         <!-- ************ BLEND MODES ************ -->
-                        <select class="input-style blend-modes style-click" id="select-blend-modes" aria-label="mezcla de filtros predeterminados con fondo">
+                        <select class="input-style blend-modes style-click" id="select-blend-modes"
+                            aria-label="mezcla de filtros predeterminados con fondo">
                             <option value="unset" selected>Ninguno</option>
                             <option value="lighten">Aclarar</option>
                             <option value="darken">Oscurecer</option>
@@ -165,8 +167,8 @@
                 </div>
                 <!-- ************ BOTON RESET FILTROS ************ -->
                 <div class="input-label btn-reset">
-                    <a class="reset-button style-click" type="submit" id="reset-button" value="Reset"
-                        href="#" aria-label="restablecer filtros">Restablecer filtros</a>
+                    <a class="reset-button style-click" type="submit" id="reset-button" value="Reset" href="#"
+                        aria-label="restablecer filtros">Restablecer filtros</a>
                 </div>
             </section>
         </aside>
@@ -186,7 +188,8 @@
                 <!-- ************ TEXTAREA SUPERIOR + INPUT ************ -->
                 <div class="container-text-top">
                     <h3 class="title-text-aside">SUPERIOR</h3>
-                    <textarea id="text-top-textarea" class="text-top input-style style-click" aria-label="texto superior">TOP TEXT</textarea>
+                    <textarea id="text-top-textarea" class="text-top input-style style-click"
+                        aria-label="texto superior">TOP TEXT</textarea>
                     <br>
                     <div class="input-label">
                         <input id="text-top-input" type="checkbox" class="text-input-chekbox style-click">
@@ -210,7 +213,8 @@
                 <br>
                 <div class="container-font">
                     <h3 class="title-text-aside">FUENTE</h3>
-                    <select class="input-style input-font style-click" id="font-family-input" aria-label="familia de fuente">
+                    <select class="input-style input-font style-click" id="font-family-input"
+                        aria-label="familia de fuente">
                         <option value="arial">Arial</option>
                         <option value="arial black">Arial Black</option>
                         <option value="american Typewriter">American Typewriter</option>
@@ -224,14 +228,18 @@
                     <!-- ************ FONT SIZE ************ -->
                     <div class="container-alignment">
                         <input class="font-alignment aligment-style input-style style-click" id="text-size-input"
-                            name="text-size" type="number" value="40" max="40" min="12" aria-label="tamaño de fuente"></input>
+                            name="text-size" type="number" value="40" max="40" min="12"
+                            aria-label="tamaño de fuente"></input>
                         <!-- ************ ALIGN BUTTON ************ -->
-                        <button class="aligment-style style-click" id="button-align-left" aria-label="alinear texto a la izquierda"><i
-                                class="fa-solid fa-align-left" aria-hidden="true"></i></button>
-                        <button class="aligment-style style-click" id="button-align-center" aria-label="aliner texto al centro"><i
-                                class="fa-solid fa-align-center" aria-hidden="true"></i></button>
-                        <button class="aligment-style style-click" id="button-align-right" aria-label="alinear texto a la derecha"><i
-                                class="fa-solid fa-align-right" aria-hidden="true"></i></button>
+                        <button class="aligment-style style-click" id="button-align-left"
+                            aria-label="alinear texto a la izquierda"><i class="fa-solid fa-align-left"
+                                aria-hidden="true"></i></button>
+                        <button class="aligment-style style-click" id="button-align-center"
+                            aria-label="aliner texto al centro"><i class="fa-solid fa-align-center"
+                                aria-hidden="true"></i></button>
+                        <button class="aligment-style style-click" id="button-align-right"
+                            aria-label="alinear texto a la derecha"><i class="fa-solid fa-align-right"
+                                aria-hidden="true"></i></button>
                     </div>
                 </div>
                 <br>
@@ -241,8 +249,8 @@
                     <div class="container-color input-edit-color style-click" id="color-text-md">
                         <input class="edit-color" type="color" id="color-text-input" name="type-color-text"
                             value="#000000" aria-label="color de texto">
-                        <label for="type-color-text"></label><span id="color-text-label"
-                            class="span-fondo" aria-hidden="true">#000000</span>
+                        <label for="type-color-text"></label><span id="color-text-label" class="span-fondo"
+                            aria-hidden="true">#000000</span>
                     </div>
                 </div>
                 <!-- ************ COLOR FONDO ************ -->
@@ -251,12 +259,14 @@
                     <div class="input-edit-color input-edit-color style-click" id="color-background-md">
                         <input class="edit-color" type="color" id="color-box-input" name="type-color-box"
                             value="#FFFFFF" aria-label="color de fondo">
-                        <label for="type-color-box"></label><span id="color-box-label" class="span-fondo" aria-hidden="true">#FFFFFF</span>
+                        <label for="type-color-box"></label><span id="color-box-label" class="span-fondo"
+                            aria-hidden="true">#FFFFFF</span>
                     </div>
                 </div>
                 <!-- ************ INPUT FONDO TRANSPARENTE ************ -->
                 <div class="input-label"><br>
-                    <input id="transparent-background" type="checkbox" class="text-input-chekbox" aria-label="color de fondo de texto">
+                    <input id="transparent-background" type="checkbox" class="text-input-chekbox"
+                        aria-label="color de fondo de texto">
 
                     <label for="transparent-background" aria-hidden="true">Fondo transparente</label>
                 </div>
@@ -265,10 +275,10 @@
                 <div class="container-font-style">
                     <h3 class="title-text-aside">CONTORNO</h3>
                     <div id="contorno">
-                    <button class="font-style style-click contorno-ninguno" id="no-outline-button">Ninguno</button>
-                    <button class="font-style style-click contorno-claro" id="light-outline-button">Claro</button>
-                    <button class="font-style style-click contorno-oscuro" id="dark-outline-button"> Oscuro</button>
-                </div>
+                        <button class="font-style style-click contorno-ninguno" id="no-outline-button">Ninguno</button>
+                        <button class="font-style style-click contorno-claro" id="light-outline-button">Claro</button>
+                        <button class="font-style style-click contorno-oscuro" id="dark-outline-button"> Oscuro</button>
+                    </div>
                     <!-- ************ PADDING ************ -->
                     <br>
                     <h3 class="title-text-aside">ESPACIADO</h3>
@@ -277,7 +287,8 @@
                     <!-- ************ ALTO DE LINEA ************ -->
                     <br>
                     <h3 class="title-text-aside">INTERLINEADO</h3>
-                    <select id="line-height-input" class="input-style input-interlineado style-click" aria-label="interlineado">
+                    <select id="line-height-input" class="input-style input-interlineado style-click"
+                        aria-label="interlineado">
                         <option value="0.8">0.8</option>
                         <option value="1">1</option>
                         <option value="1.2" selected>1.2</option>
