@@ -317,7 +317,6 @@ lineHeightInput.addEventListener('input', (event)=>{
 // **********************************************************
 
 
-
 modoClaroButton.addEventListener('click', ()=>{
     modoOscuroHeader.classList.toggle('modo-oscuro');
     textIcon.classList.toggle('modo-oscuro-header-icon');
@@ -359,7 +358,7 @@ modoClaroButton.addEventListener('click', ()=>{
     invertRangeInput.classList.toggle('modo-oscuro-aside-input');
     modoClaroButton.classList.toggle('oculto');
     modoOscuroButton.classList.toggle('oculto');
-   
+
 })
 
 modoOscuroButton.addEventListener('click', ()=>{
@@ -405,7 +404,6 @@ modoOscuroButton.addEventListener('click', ()=>{
     invertRangeInput.classList.toggle('modo-oscuro-aside-input');
 
 })
-
 
 
 // **********************************************************
