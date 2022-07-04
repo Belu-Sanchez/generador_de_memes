@@ -25,6 +25,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"
         integrity="sha512-01CJ9/g7e8cUmY0DFTMcUw/ikS799FHiOA0eyHsUWfOetgbx/t6oV4otQ5zXKQyIrQGTHSmRVPIgrgLcZi/WMA=="
         crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="stylesheet" href="style.css" />
     <title>Editor de memes</title>
@@ -54,20 +56,46 @@
            //  MAIN
         *******************************************************************************/-->
         <main class="container-main" id="container-main">
-            <div class="black-box master-box" id="black-box">
+            <div id="html-content-holder">
+            <div class="black-box master-box" id="black-box" id="canvas" id="html-content-holder" >
                 <h2 class="top-text text-box-white" id="top-text">TEXT BOX TOP</h2>
-                <div style="dataUrl" alt="#" aria-label="imagen del meme" id="master-box-img" class="master-box-img">
+                <div src="#" alt="#" aria-label="imagen del meme" id="master-box-img" class="master-box-img">
                 </div>
                 <h2 id="bottom-text" class="text-box-white bottom-text">TEXT BOX BOTTOM</h2>
             </div>
+        </div>
             <!--/*******************************************************************************
                  // DOWNLOAD BUTTON
             *******************************************************************************/-->
             <section class="container-dowload-button" id="container-dowload-button">
-                <a id="a-dowload-button" class="a-dowload-button" download="my-meme.png" href="dataUrl"
+                <a id="a-dowload-button" class="a-dowload-button" download="my-meme.png" href="dataUrl" id="btnDescargar"
                     aria-hidden="true">Descargar meme</a>
+
+ <input id="btn-Preview-Image" type="button" value="Preview"/>
+    <a id="btn-Convert-Html2Image" href="#">Download</a>
+    <div id="previewImage">
+    </div>
+
+    <div id="capture" style="padding: 10px; background: #f5da55">
+        <h4 style="color: #000; ">Hello world!</h4>
+    </div>
+
             </section>
-        </main>
+        </main> 
+   
+ 
+   
+
+
+
+
+
+
+
+
+
+
+
 
         <!--/*******************************************************************************
            // ASIDE IMAGE                       
