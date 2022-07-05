@@ -121,15 +121,15 @@ const filter = ()=>{
 };
 
 
-brightnessRange.addEventListener('input', (filter));
-opacityRangeInput.addEventListener('input', (filter));
-contrastRangeInput.addEventListener('input', (filter));
-blurRangeInput.addEventListener('input', (filter));
-grayscaleRangeInput.addEventListener('input', (filter));
-sepiaRangeInput.addEventListener('input', (filter));
-hueRotationRangeInput.addEventListener('input', (filter));
-saturationRangeInput.addEventListener('input', (filter));
-invertRangeInput.addEventListener('input', (filter));
+brightnessRange.addEventListener('input', filter);
+opacityRangeInput.addEventListener('input', filter);
+contrastRangeInput.addEventListener('input', filter);
+blurRangeInput.addEventListener('input', filter);
+grayscaleRangeInput.addEventListener('input', filter);
+sepiaRangeInput.addEventListener('input', filter);
+hueRotationRangeInput.addEventListener('input', filter);
+saturationRangeInput.addEventListener('input', filter);
+invertRangeInput.addEventListener('input', filter);
 
 
 // **********************************************************
