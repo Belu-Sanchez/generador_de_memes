@@ -19,6 +19,7 @@
 .container-header {
     text-align: center;
     background-color: rgb(199, 199, 224);
+
 }
 
 .container-header div {
@@ -67,12 +68,13 @@ a:active.header-icon {
     text-align: center;
     flex-direction: column;
     align-items: center;
+    padding: 1.5em;
 
 }
 
 
 .master-box {
-    margin: 1.5em;
+    margin: 0px;
     width: 100%;
     max-width: 610px;
     height: 610px;

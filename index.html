@@ -9,29 +9,20 @@
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">    
     <link
         href="https://fonts.googleapis.com/css2?family=Barrio&family=Fascinate&family=Indie+Flower&family=VT323&family=Vidaloka&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js"
-        integrity="sha512-csNcFYJniKjJxRWRV1R7fvnXrycHP6qDR21mgz1ZP55xY5d+aHLfo9/FcGDQLfn2IfngbAHd8LdfsagcCqgTcQ=="
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"
-        integrity="sha512-01CJ9/g7e8cUmY0DFTMcUw/ikS799FHiOA0eyHsUWfOetgbx/t6oV4otQ5zXKQyIrQGTHSmRVPIgrgLcZi/WMA=="
-        crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&amp;display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="stylesheet" href="style.css" />
     <title>Editor de memes</title>
 </head>
-
 <body>
     <!--/*******************************************************************************
             HEADER
@@ -55,19 +46,19 @@
            //  MAIN
         *******************************************************************************/-->
         <main class="container-main" id="container-main">
-           
-                <div class="black-box master-box" id="black-box" id="canvas" id="html-content-holder">
+
+                <div class="black-box master-box" id="black-box" id="canvas" src="./evetntos.png" alt="img" >
                     <h2 class="top-text text-box-white" id="top-text">TEXT BOX TOP</h2>
-                    <div src="#" alt="#" aria-label="imagen del meme" id="master-box-img" class="master-box-img">
+                    <div aria-label="imagen del meme" id="master-box-img" class="master-box-img">
                     </div>
                     <h2 id="bottom-text" class="text-box-white bottom-text">TEXT BOX BOTTOM</h2>
                 </div>
-            
+
             <!--/*******************************************************************************
                  // DOWNLOAD BUTTON
             *******************************************************************************/-->
             <section class="container-dowload-button" id="container-dowload-button">
-                <a id="a-dowload-button" class="a-dowload-button" download="my-meme.png" href="dataUrl"
+                <a id="a-dowload-button" class="a-dowload-button"
                     aria-hidden="true">Descargar meme</a>
             </section>
         </main>
@@ -307,8 +298,8 @@
 
 
 
-
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js" integrity="sha512-csNcFYJniKjJxRWRV1R7fvnXrycHP6qDR21mgz1ZP55xY5d+aHLfo9/FcGDQLfn2IfngbAHd8LdfsagcCqgTcQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js" integrity="sha512-01CJ9/g7e8cUmY0DFTMcUw/ikS799FHiOA0eyHsUWfOetgbx/t6oV4otQ5zXKQyIrQGTHSmRVPIgrgLcZi/WMA==" crossorigin="anonymous"></script>
 
     <script src="./app.js"></script>
 </body>
