@@ -548,6 +548,7 @@ a:active.a-dowload-button {
     .btn-x-text {
         position: fixed;
         right: 5px;
+        color: black;
     }
 
     .range-input {
@@ -555,8 +556,8 @@ a:active.a-dowload-button {
         height: 0.7em;
         border-radius: 1em;
         margin-top: 0.5em;
-        margin-bottom: 0.3em;
-        accent-color: #0d87a0;
+        margin-bottom: 0.5em;
+
     }
 
 
