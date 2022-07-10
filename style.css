@@ -69,7 +69,6 @@ a:active.header-icon {
 }
 
 .master-box {
-    margin: 0px;
     width: 100%;
     max-width: 610px;
     height: 610px;
@@ -80,7 +79,7 @@ a:active.header-icon {
 }
 
 .text-box-white {
-    padding: 1em 4em;
+    padding: 1em;
     width: 100%;
     background: white;
     color: black;
