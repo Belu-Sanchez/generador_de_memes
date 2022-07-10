@@ -247,10 +247,10 @@ a:active.a-dowload-button {
 }
 
 .edit-color {
-    margin: 0.1em;
+    /* margin: 0.1em; */
     width: 1.7em;
-    appearance: none;
-    border-radius: 50%;
+    /* appearance: none;
+    border-radius: 50%; */
     background-color: transparent;
     border: none;
     margin-left: 0.5em;
@@ -304,9 +304,10 @@ a:active.a-dowload-button {
     background-color: rgb(199, 199, 224);
     border: none;
     padding: 0.5em;
+    color:black;
 }
 
-.fa-align-left:before {
+/* .fa-align-left:before {
     content: '\f036';
 }
 
@@ -316,7 +317,7 @@ a:active.a-dowload-button {
 
 .fa-align-right:before {
     content: '\f038';
-}
+} */
 
 .font-alignment {
     width: 70%;
@@ -475,12 +476,12 @@ a:active.a-dowload-button {
 
     .main-title {
         padding: 0.1em;
-        font-size: 1em;
+        font-size: 2em;
         letter-spacing: 0em;
     }
 
     .header-icon {
-        font-size: 0.7em;
+        font-size: 1em;
         margin: 1em;
         padding: 0.2em 0.2em;
         background-color: rgb(218, 233, 240);
@@ -493,19 +494,19 @@ a:active.a-dowload-button {
 
     .a-dowload-button {
         padding: 0.5em;
-        font-size: 0.7em;
+        font-size: 1em;
         border: solid black 0.1m;
         border: solid black 0.1em;
         box-shadow: -4px 4px 0 #0d87a0;
     }
 
     .master-box {
-        max-width: 255px;
-        height: 255px;
+        max-width: 300px;
+        height: 300px;
     }
 
     .text-box-white {
-        padding: 1em 1em;
+        padding: 1.3em;
         font-size: 20px;
         font-weight: 300;
     }
@@ -513,16 +514,24 @@ a:active.a-dowload-button {
     .container-right-text,
     .container-right-image {
         width: 100%;
-        font-size: 0.6em;
+        font-size: 1em;
         overflow: auto;
     }
 
-    .container-btn-x,
+    .btn-x-image,
     .btn-x-text {
         position: fixed;
         right: 5px;
         color: black;
     }
+
+    /* .container-fondo {
+        width: 100%;
+        height: 7em;
+        margin-bottom: 1em;
+        display: flex;
+        flex-direction: column;
+    } */
 
     .range-input {
         width: 100%;
