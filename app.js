@@ -50,7 +50,6 @@ const buttonAlignCenter = document.getElementById('button-align-center');
 const buttonAlignRight = document.getElementById('button-align-right');
 const colorBoxInput = document.getElementById('color-box-input');
 const colorBoxLabel = document.getElementById('color-box-label');
-
 const colorTextLabel = document.getElementById('color-text-label');
 const modoClaroButton = document.getElementById('modo-claro-button');
 

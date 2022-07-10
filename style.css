@@ -19,7 +19,6 @@
 .container-header {
     text-align: center;
     background-color: rgb(199, 199, 224);
-
 }
 
 .container-header div {
@@ -69,7 +68,6 @@ a:active.header-icon {
     flex-direction: column;
     align-items: center;
     padding: 1.5em;
-
 }
 
 
@@ -82,7 +80,6 @@ a:active.header-icon {
     position: relative;
     display: flex;
     flex-direction: column;
-
 }
 
 .text-box-white {
@@ -93,7 +90,6 @@ a:active.header-icon {
     text-align: center;
     font-size: 40px;
     font-weight: 800;
-
 }
 
 .master-box-img {
@@ -118,8 +114,6 @@ a:active.header-icon {
     background-color: rgb(241, 241, 208);
     width: 100%;
 }
-
-
 
 .a-dowload-button {
     padding: 1.5em;
@@ -170,12 +164,10 @@ a:active.a-dowload-button {
     width: 25%;
     height: 100%;
     font-size: 0.9em;
-
 }
 
 .container-btn-x {
     display: flex;
-
 }
 
 .title-aside {
@@ -217,7 +209,7 @@ a:active.a-dowload-button {
     width: 100%;
     padding: 0.5em 1em;
     cursor: pointer;
-    color:black;
+    color: black;
 }
 
 .container-fondo {
@@ -225,7 +217,7 @@ a:active.a-dowload-button {
     display: flex;
     justify-content: space-between;
     cursor: pointer;
-    color:black;
+    color: black;
 }
 
 .range-input {
@@ -238,7 +230,6 @@ a:active.a-dowload-button {
     cursor: pointer;
     accent-color: #0d87a0;
     margin-bottom: 0.5em;
-
 }
 
 .range-input:hover {
@@ -253,7 +244,6 @@ a:active.a-dowload-button {
 
 .btn-reset {
     margin-top: 3em;
-
 }
 
 .edit-color {
@@ -275,7 +265,6 @@ a:active.a-dowload-button {
     background-color: rgb(199, 199, 224);
     width: 100%;
     position: relative;
-
 }
 
 .span-fondo {
@@ -336,13 +325,11 @@ a:active.a-dowload-button {
     appearance: none;
 }
 
-
 .container-color {
     width: 9em;
     display: flex;
     display: inline-block;
 }
-
 
 .input-interlineado,
 .input-font {
@@ -402,23 +389,14 @@ a:active.a-dowload-button {
   // NECESSARY CODE JS
 /*? *******************************************************************************/
 
-
 .oculto {
     display: none;
-
 }
-
-.oculto-text-box {
-    background: none;
-    padding: 0;
-    position: absolute;
-}
-
 
 /*? *******************************************************************************
  //  MEDIA QUERYS
 /*? *******************************************************************************/
-@media screen and (min-width:1201px){
+@media screen and (min-width:1201px) {
     .container-right-image {
         display: block;
     }
@@ -435,7 +413,6 @@ a:active.a-dowload-button {
     .container-right-image {
         width: 30%;
         overflow: auto;
-
     }
 
     .container-btn-x,
@@ -446,7 +423,6 @@ a:active.a-dowload-button {
 
     .font-alignment {
         width: 100%;
-
     }
 
     .master-box {
@@ -490,7 +466,6 @@ a:active.a-dowload-button {
 
     .font-alignment {
         width: 100%;
-
     }
 
 }
@@ -502,7 +477,6 @@ a:active.a-dowload-button {
         padding: 0.1em;
         font-size: 1em;
         letter-spacing: 0em;
-
     }
 
     .header-icon {
@@ -523,7 +497,6 @@ a:active.a-dowload-button {
         border: solid black 0.1m;
         border: solid black 0.1em;
         box-shadow: -4px 4px 0 #0d87a0;
-
     }
 
     .master-box {
@@ -542,8 +515,8 @@ a:active.a-dowload-button {
         width: 100%;
         font-size: 0.6em;
         overflow: auto;
-
     }
+
     .container-btn-x,
     .btn-x-text {
         position: fixed;
@@ -557,14 +530,10 @@ a:active.a-dowload-button {
         border-radius: 1em;
         margin-top: 0.5em;
         margin-bottom: 0.5em;
-
     }
-
-
 
     .font-alignment {
         width: 100%;
-
     }
 
     .aligment-style,
